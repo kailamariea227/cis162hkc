@@ -261,6 +261,15 @@ h2{
     line-height: 0.05em;
 }
 
+h3{
+ font-family: 'Bagel Fat One', cursive;
+    font-size: 30px;
+    color: #db7093;
+    text-shadow: 3px 3px #FFDBED;
+    text-align:center;
+    line-height: 0.05em;   
+}
+
 h1,
 header {
     font-family: 'Bagel Fat One', cursive;
