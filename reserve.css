@@ -1,45 +1,137 @@
 @charset "utf-8";
 
+/* Forms */
+input[type=text], radio,textarea
+{
+  width: 100%;
+  resize: vertical;
+padding: 12px 20px;
+  margin: 8px 0;
+    border:1px solid #F2A2C0;
+    border-radius:12px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input
+{
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    border:solid 1px;
+    font-size:17px;
+    border-radius:12px;
+    background-color: #FFF0F5;
+    color:#DB7093;
+}
+
+fieldset {
+      border: 2px solid #CF537B;
+    border-radius:20px;;
+    }
+
+input:focus {
+  background-color: #FFDBED;
+}
+
+legend
+{
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 30px;
+    color: #db7093;
+    text-shadow: 3px 3px #FFDBED;
+}
+
+label
+{
+        font-family: 'Itim', cursive;
+        font-size: 20px;
+    color:#CF537B;
+      display: inline-block;
+      padding: 12px 12px 12px 0;
+
+}
+
+small
+{
+        font-family: 'Itim', cursive;
+    color:#DB7093;
+}
+
+input[type=submit]{
+  background-color: #DB7093;
+  border: solid 3px #CF537B;
+  color: #FFF0F5;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+    font-size:20px;
+    float:right;
+}
+
+input[type=reset] {
+  background-color: #FFDBED;
+    border: solid 3px #DB7093;
+  color: #DB7093;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+    font-size:20px;
+    float:right;
+}
+
+input[type=submit]:hover {
+  background-color: #CF537B;
+}
+
+input[type=reset]:hover {
+  background-color: #F9B8CF;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fff3f7;
+border-radius:15px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Ho
+rizontal Nav. */
 img
 {    border: solid 3px #DB7093;
     border-radius: 10px;
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-gap: 30px;
-}
-
-
-#LeftColumn {
-    grid-column: 1;
-}
-
-#RightColumn {
-    grid-column: 3;
-}
-
-#MiddleColumn {
-    grid-column: 2;
-}
-
-
-/* Ho
-rizontal Nav. */
 ul {
     list-style-type: none;
     margin: 0;
@@ -109,33 +201,6 @@ hr {
     border-radius: 5px;
 }
 
-#LeftColumn p,
-address {
-    color: #f2a2c0;
-}
-
-#RightColumn {
-    background-color: #fff0f5;
-    padding: 20px;
-    border-style: solid;
-    border-color: #f2a2c0;
-    border-width: 3px;
-    border-radius: 15px;
-    text-align: left;
-
-}
-
-#LeftColumn {
-    background-color: #fff0f5;
-    padding: 10px;
-    border-style: solid;
-    border-color: #f2a2c0;
-    border-width: 3px;
-    border-radius: 15px;
-    text-align: left;
-
-}
-
 footer {
     background-color: #fff0f5;
     border-style: solid;
@@ -161,9 +226,6 @@ footer {
     line-height: 1em;
     text-shadow: 1.7px 1.5px #cf537b;
 }
-#MiddleColumn, p {
-    color: #db7093;
-}
 
 address
 {
@@ -178,15 +240,25 @@ p {
     text-align: center;
     font-family: 'Itim', cursive;
     font-size: 20px;
-    letter-spacing: 0.05em;
-    line-height: 1em;
+    letter-spacing: 0.005em;
+    line-height: 0.95em;
+    color: #DB7093;
 }
 
 footer p
 {
        font-size: 20px;
     letter-spacing: 0.05em;
-    line-height: 0.005em; 
+    line-height: 0.05em; 
+}
+
+h2{
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 40px;
+    color: #db7093;
+    text-shadow: 3px 3px #FFDBED;
+    text-align:center;
+    line-height: 0.05em;
 }
 
 h1,
@@ -196,35 +268,6 @@ header {
     font-size: 45px;
     color: #db7093;
     text-shadow: 3px 3px #FFDBED;
-}
-
-#LeftColumn h2,
-#RightColumn h2 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'Bagel Fat One', cursive;
-    font-size: 40px;
-    color: #f088aa;
-    text-shadow: none;
-    letter-spacing: 0.05em;
-    text-shadow: 2px 2px #ffdbed;
-}
-
-#MiddleColumn h2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'Bagel Fat One', cursive;
-    font-size: 40px;
-    text-shadow: 2.2px 2px #db7093;
-    color: #f2a2c0;
-    letter-spacing: 0.05em;
-    line-height: 0.95em;
-
 }
 
 a {

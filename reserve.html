@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data & Style Sheet Links -->
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <meta name="author" content="Kaila Marie Alayon">
+    <meta name="description" content="Hello Kitty Cafe Home">
+    <meta name="keywords" content="Hello Kitty, Hello Kitty Cafe, Cafe, Irvine">
+    <link href="reserve.css" rel="stylesheet">
+    <title>Reserve | Hello Kitty Cafe</title>
+</head>
+<body>
+    <!-- Official Website Page Title -->
+    <header>
+        <h1>Hello Kitty Cafe</h1>
+    </header>
+    <!-- Horizontal Navigation -->
+    <div id="horizontalNavigation">
+        <ul>
+            <li><a href="index.html">Welcome!</a></li>
+            <li><a href="#">Cafe Menu</a></li>
+            <li><a href="#">Afternoon Tea</a></li>
+            <li><a href="#">Cocktail Service</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <br>
+<h2>Reservation Information</h2>
+<p>Reservations are exclusively for our Afternoon Tea & Cocktail Service, located in the Bow Room. Walk-in's are welcomed but only based on avaliability and are not guaranteed. Our daily cafe does not require a reservation.Our Afternoon Tea sessions are $60 per persion, with a prix fixe menu that consists of sweet and savory items and a pot of tea of your choice.Our Cocktail Service is for 21+ guests only; minors will not be allowed into the Bow Room during this time and will be turned away if guests do not have a valid form of ID indicating they are of age.We respectfully ask for confirmation and party changes to be made at least 24 hours prior to the reservation time. Without prior confirmation, tables are subject to be forfeited after a 15 minute grace period.</p>
+<hr>
+<br>
+
+<div class="container">
+<form action="/action_page.php">
+<fieldset>
+<legend> Contact Information</legend>
+<div class="row">
+<div class="col-25">
+<label for="fname">First Name:</label>
+</div>
+<div class="col-75">
+<input type="text" id="fname" name="fname" placeholder="Hello"></div></div>
+<div class="row">
+<div class="col-25">
+<label for="lname">Last name:</label></div>
+<div class="col-75"><input type="text" id="lname" name="lname" placeholder="Kitty"></div></div>
+<div class="row">
+<div class="col-25">
+<label for="email">Enter your email:</label></div><br>
+<div class="col-75"><input type="email" id="email" name="email" placeholder="hellokitty@sanrio.com">
+</div></div>
+<div class="row">
+<div class="col-25"><label for="phone">Enter a phone number:</label></div>
+<div class="col-75">
+<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+<small>Format: 123-456-7890</small>
+</div></div>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Reserve Your Seat</legend>
+    <input type="radio" id="tea" name="service" value="Afternoon Tea">
+<label for="tea">Afternoon Tea</label>
+ <br>
+
+    <input type="radio" id="cocktail" name="service" value="Cocktail Service">
+    <label for="cocktail">Cocktail Service</label>
+<br><br>
+
+<div class="row">
+<div class="col-25">
+<label for="guests">Guests:</label></div><br>
+<div class="col-75">
+    <input type="number" id="guests" name="guests" min="1" max="8" step="1" value="1"><br>
+    <small>Parties that are 8+ must be reserved over the phone.</small></div></div><br><br>
+
+<div class="row">
+<div class="col-25">
+    <label for="reservationtime">Desired Reservation Time (date and time):</label></div><br>
+<div class="col-75">
+    <input type="datetime-local" id="reservationtime" name="reservationtime"></div></div>
+</fieldset>
+<br>
+<input type="submit" value="Submit">
+  <input type="reset">
+</form> 
+</div>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<hr>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <h3>Hello Kitty Cafe</h3>
+        <p>Desserts &#10084; Coffee &#10084; Tea &#10084; Cuteness</p>
+        <p>Have a sweet day &#10083;</p>
+    </footer>
+</body>
+</html>
