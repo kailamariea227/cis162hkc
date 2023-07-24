@@ -20,83 +20,94 @@
     <div id="horizontalNavigation">
         <ul>
             <li><a href="index.html">Welcome!</a></li>
-            <li><a href="#">Cafe Menu</a></li>
-            <li><a href="#">Afternoon Tea</a></li>
-            <li><a href="#">Cocktail Service</a></li>
+            <li><a href="cafemenu.html">Cafe Menu</a></li>
+            <li><a href="afternoontea.html">Afternoon Tea</a></li>
+            <li><a href="cocktailservice.html">Cocktail Service</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </div>
     <br>
-<h2>Reservation Information</h2>
-<p>Reservations are exclusively for our Afternoon Tea & Cocktail Service, located in the Bow Room. Walk-in's are welcomed but only based on avaliability and are not guaranteed. Our daily cafe does not require a reservation.Our Afternoon Tea sessions are $60 per persion, with a prix fixe menu that consists of sweet and savory items and a pot of tea of your choice.Our Cocktail Service is for 21+ guests only; minors will not be allowed into the Bow Room during this time and will be turned away if guests do not have a valid form of ID indicating they are of age.We respectfully ask for confirmation and party changes to be made at least 24 hours prior to the reservation time. Without prior confirmation, tables are subject to be forfeited after a 15 minute grace period.</p>
-
-<hr>
-<h3>Hours</h3>
-<p>Afternoon Tea: <br> Wednesday &hyphen; Friday, 11am&#8212;2:30pm (last seating)<br>Saturday &hyphen; Sunday, 10am&#8212;3pm (last seating) <br><br>Cocktail Service: <br> Wednesday &hyphen; Friday, 5pm&#8212;9pm (last call) <br> Saturday, 5:15pm&#8212;9:45pm (last call) </p>
-<hr>
-<br>
-
-<div class="container">
-<form action="/action_page.php">
-<fieldset>
-<legend> Contact Information</legend>
-<div class="row">
-<div class="col-25">
-<label for="fname">First Name:</label>
-</div>
-<div class="col-75">
-<input type="text" id="fname" name="fname" placeholder="Hello"></div></div>
-<div class="row">
-<div class="col-25">
-<label for="lname">Last name:</label></div>
-<div class="col-75"><input type="text" id="lname" name="lname" placeholder="Kitty"></div></div>
-<div class="row">
-<div class="col-25">
-<label for="email">Enter your email:</label></div><br>
-<div class="col-75"><input type="email" id="email" name="email" placeholder="hellokitty@sanrio.com">
-</div></div>
-<div class="row">
-<div class="col-25"><label for="phone">Enter a phone number:</label></div>
-<div class="col-75">
-<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
-<small>Format: 123-456-7890</small>
-</div></div>
-</fieldset>
-
-<br>
-
-<fieldset>
-<legend>Reserve Your Seat</legend>
-    <input type="radio" id="tea" name="service" value="Afternoon Tea">
-<label for="tea">Afternoon Tea</label>
- <br>
-
-    <input type="radio" id="cocktail" name="service" value="Cocktail Service">
-    <label for="cocktail">Cocktail Service</label>
-<br><br>
-
-<div class="row">
-<div class="col-25">
-<label for="guests">Guests:</label></div><br>
-<div class="col-75">
-    <input type="number" id="guests" name="guests" min="1" max="8" step="1" value="1"><br>
-    <small>Parties that are 8+ must be reserved over the phone.</small></div></div><br><br>
-
-<div class="row">
-<div class="col-25">
-    <label for="reservationtime">Desired Reservation Time (date and time):</label></div><br>
-<div class="col-75">
-    <input type="datetime-local" id="reservationtime" name="reservationtime"></div></div>
-</fieldset>
-<br>
-<input type="submit" value="Submit">
-<input type="reset">
-</form> 
-</div>
-<br>
-<br>
-<br>
-<hr>
+    <h2>Reservation Information</h2>
+    <p>Reservations are exclusively for our Afternoon Tea & Cocktail Service, located in the Bow Room. Walk-in's are welcomed but only based on avaliability and are not guaranteed. Our daily cafe does not require a reservation.Our Afternoon Tea sessions are $60 per persion, with a prix fixe menu that consists of sweet and savory items and a pot of tea of your choice.Our Cocktail Service is for 21+ guests only; minors will not be allowed into the Bow Room during this time and will be turned away if guests do not have a valid form of ID indicating they are of age.We respectfully ask for confirmation and party changes to be made at least 24 hours prior to the reservation time. Without prior confirmation, tables are subject to be forfeited after a 15 minute grace period.</p>
+    <hr>
+    <h3>Hours</h3>
+    <p>Afternoon Tea: <br> Wednesday &hyphen; Friday, 11am&#8212;2:30pm (last seating)<br>Saturday &hyphen; Sunday, 10am&#8212;3pm (last seating) <br><br>Cocktail Service: <br> Wednesday &hyphen; Friday, 5pm&#8212;9pm (last call) <br> Saturday, 5:15pm&#8212;9:45pm (last call) </p>
+    <hr>
+    <br>
+    <div class="container">
+        <form action="/action_page.php">
+            <fieldset>
+                <legend> Contact Information</legend>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fname" placeholder="Hello"></div></div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lname" placeholder="Kitty">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Enter your email:</label>
+                    </div>
+                    <br>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="hellokitty@sanrio.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Enter a phone number:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                        <small>Format: 123-456-7890</small>
+                    </div></div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Reserve Your Seat</legend>
+                <input type="radio" id="tea" name="service" value="Afternoon Tea">
+                    <label for="tea">Afternoon Tea</label>
+                <br>
+                <input type="radio" id="cocktail" name="service" value="Cocktail Service">
+                    <label for="cocktail">Cocktail Service</label>
+                <br><br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="guests">Guests:</label>
+                    </div>
+                    <br>
+                    <div class="col-75">
+                        <input type="number" id="guests" name="guests" min="1" max="8" step="1" value="1"><br>
+                        <small>Parties that are 8+ must be reserved over the phone.</small>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reservationtime">Desired Reservation Time (date and time):</label>
+                    </div>
+                    <br>
+                    <div class="col-75">
+                        <input type="datetime-local" id="reservationtime" name="reservationtime"></div></div>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
     <br>
     <!-- Footer -->
     <footer>

@@ -1,32 +1,112 @@
 @charset "utf-8";
 
-/* Gallery */
-div.gallery {
-    border: 2px solid #cf537b;
-    border-radius: 10px;
-    background-color: #DB7093;
-    display: block;
+
+/* Restaurant Menu Columns */
+
+* {
+    box-sizing: border-box;
 }
+
+.leftcolumn small{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Itim', cursive;
+    letter-spacing: 0.05em;
+    line-height: 0.01em;
+    font-size:14px; 
+    color:#CF537B;
+}
+
+h3 {
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 30px;
+    color: #db7093;
+    text-shadow: 3px 3px #FFDBED;
+    line-height:0.05em;
+}
+
+.leftcolumn {
+    float: left;
+    width: 85%;
+    padding: 5px;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Itim', cursive;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+    font-size:17px;
+    padding-left:20px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 15%;
+    padding: 5px;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+    font-size:17px; 
+}
+
+.row{
+    border:solid 2px #F9B8CF;
+    border-radius:15px;
+    background-color:#FFF0F5;
+    display: block;
+    color:#DB7093;
+}
+
+#about p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    letter-spacing: 0.005em;
+    line-height: 0.95em;
+    color: #DB7093;
+}
+
+#about h2 {
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 40px;
+    color: #db7093;
+    text-shadow: 3px 3px #FFDBED;
+    text-align:center;
+    line-height: 0.05em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+
+/* Images */
 div.gallery img {
     width: 100%;
     height: 200px; /* Adjust the desired height */
     object-fit: cover; 
     border-radius: 10px;
-    border-bottom: 2px solid #cf537b;
+    border: solid 3px #DB7093;
 }
 
-div.desc {
-    padding: 5px;
-    text-align: center;
-    color: #FFF0F5;
-    font-family: 'Itim', cursive;
-    font-size:17px;
-    text-shadow: 1.7px 1.5px #cf537b;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 .responsive {
     padding: 8px;
@@ -54,8 +134,7 @@ width: 100%;
 }
 
 
-/* Ho
-rizontal Nav. */
+/* Horizontal Navigation */
 ul {
     list-style-type: none;
     margin: 0;
@@ -80,8 +159,8 @@ li a {
 }
 
 /* Link Button */
-a:link,
-a:visited {
+    a:link,
+    a:visited {
     color: #fff0f5;
     padding: 14px 25px;
     text-align: center;
@@ -91,7 +170,7 @@ a:visited {
     margin-right: auto;
 }
 
-/* Generic Decorations */
+/* Generic Decoration */
 a,
 address,
 article,
@@ -104,7 +183,7 @@ main,
 nav,
 section
 div.gallery
-div.gallery img{
+div.gallery img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -125,18 +204,6 @@ hr {
     border-radius: 5px;
 }
 
-#LeftColumn p,
-address {
-    color: #f2a2c0;
-}
-
-p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'Itim', cursive;
-}
 
 h1,
 header {
@@ -147,13 +214,13 @@ header {
     text-shadow: 3px 3px #FFDBED;
 }
 
-h2 {
+    #menu h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Bagel Fat One', cursive;
-    font-size: 37px;
+    font-size: 35px;
     text-shadow: 2.2px 2px #db7093;
     color: #f2a2c0;
     letter-spacing: 0.05em;
@@ -170,7 +237,6 @@ a {
     margin-right: auto;
     text-align: center;
     text-shadow: 1.7px 1.5px #cf537b;
-
 }
 
 
@@ -215,6 +281,12 @@ footer {
 
 footer p {
     line-height: 0em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    letter-spacing:normal;
 }
 
 footer h3 {
